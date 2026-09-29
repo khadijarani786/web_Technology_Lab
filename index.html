@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies Lab</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Web Technologies Lab</h1>
+        <p>Flexbox, CSS Positioning & CSS Selectors</p>
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- FLEXBOX SECTION -->
+    <!-- ============================= -->
+
+    <section class="section">
+
+        <h2>1. Flexbox</h2>
+
+        <h3>Flex Container & Flex Items</h3>
+
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+
+
+        <h3>Main Axis & Cross Axis</h3>
+
+        <div class="axis-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+
+        <h3>Flex Direction</h3>
+
+        <div class="direction-container">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+        </div>
+
+
+        <h3>Justify Content</h3>
+
+        <div class="justify-container">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+
+
+        <h3>Align Items</h3>
+
+        <div class="align-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+
+        <h3>Flex Wrap</h3>
+
+        <div class="wrap-container">
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+            <div>Box 4</div>
+            <div>Box 5</div>
+            <div>Box 6</div>
+        </div>
+
+
+        <h3>Gap</h3>
+
+        <div class="gap-container">
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+        </div>
+
+
+        <h3>Flex Grow</h3>
+
+        <div class="grow-container">
+            <div class="grow-one">Grow 1</div>
+            <div class="grow-two">Grow 2</div>
+        </div>
+
+
+        <h3>Flex Shrink</h3>
+
+        <div class="shrink-container">
+            <div class="shrink-one">Shrink 1</div>
+            <div class="shrink-two">Shrink 2</div>
+            <div class="shrink-three">Shrink 3</div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ============================= -->
+    <!-- CSS POSITIONING -->
+    <!-- ============================= -->
+
+    <section class="section">
+
+        <h2>2. CSS Positioning</h2>
+
+        <h3>Static Position</h3>
+
+        <div class="position-box static-box">
+            Static Position
+        </div>
+
+
+        <h3>Relative Position</h3>
+
+        <div class="position-box relative-box">
+            Relative Position
+        </div>
+
+
+        <h3>Absolute Position</h3>
+
+        <div class="absolute-parent">
+
+            <div class="position-box absolute-box">
+                Absolute Position
+            </div>
+
+        </div>
+
+
+        <h3>Fixed Position</h3>
+
+        <p>
+            The small button at the bottom-right corner demonstrates
+            fixed positioning.
+        </p>
+
+
+        <h3>Sticky Position</h3>
+
+        <div class="sticky-box">
+            Sticky Position
+        </div>
+
+        <p class="long-text">
+            Scroll the page to see the sticky element in action.
+            This is practice content for CSS positioning.
+            You can scroll up and down to observe how sticky positioning works.
+        </p>
+
+    </section>
+
+
+
+    <!-- ============================= -->
+    <!-- CSS SELECTORS -->
+    <!-- ============================= -->
+
+    <section class="section">
+
+        <h2>3. CSS Selectors</h2>
+
+
+        <h3>Universal Selector</h3>
+
+        <p class="selector-demo">
+            Universal selector applies styling to all elements.
+        </p>
+
+
+        <h3>Element Selector</h3>
+
+        <p>
+            This paragraph is styled using the element selector.
+        </p>
+
+
+        <h3>Class Selector</h3>
+
+        <p class="highlight">
+            This paragraph uses a class selector.
+        </p>
+
+
+        <h3>ID Selector</h3>
+
+        <p id="unique-text">
+            This paragraph uses an ID selector.
+        </p>
+
+
+        <h3>Attribute Selector</h3>
+
+        <input type="text" placeholder="Text input">
+        <input type="email" placeholder="Email input">
+
+
+        <h3>Descendant Selector</h3>
+
+        <div class="parent">
+            <p>
+                This paragraph is inside the parent.
+            </p>
+
+            <div>
+                <p>
+                    This is a nested paragraph.
+                </p>
+            </div>
+        </div>
+
+
+        <h3>Child Selector</h3>
+
+        <div class="child-parent">
+            <p>Direct Child Paragraph</p>
+
+            <div>
+                <p>Nested Paragraph</p>
+            </div>
+        </div>
+
+
+        <h3>Adjacent Sibling Selector</h3>
+
+        <div class="sibling-demo">
+            <p>First Paragraph</p>
+            <p>Adjacent Paragraph</p>
+            <p>Another Paragraph</p>
+        </div>
+
+
+        <h3>General Sibling Selector</h3>
+
+        <div class="general-sibling">
+            <p>First Paragraph</p>
+            <p>Second Paragraph</p>
+            <p>Third Paragraph</p>
+        </div>
+
+
+        <h3>Pseudo-class</h3>
+
+        <button class="hover-button">
+            Hover Over Me
+        </button>
+
+
+        <h3>Pseudo-element</h3>
+
+        <p class="pseudo-element">
+            This text demonstrates a pseudo-element.
+        </p>
+
+    </section>
+
+
+
+    <!-- Fixed Button -->
+
+    <div class="fixed-button">
+        Fixed
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Web Technologies Lab Task</p>
+        <p>HTML & CSS Practice</p>
+    </footer>
+
+</body>
+</html>

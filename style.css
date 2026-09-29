@@ -1,0 +1,474 @@
+/* ================================= */
+/* GENERAL STYLING */
+/* ================================= */
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+
+/* Section */
+
+.section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #1d3557;
+    border-bottom: 2px solid #1d3557;
+    padding-bottom: 10px;
+}
+
+.section h3 {
+    margin-top: 30px;
+}
+
+
+
+/* ================================= */
+/* FLEXBOX */
+/* ================================= */
+
+/* Flex Container & Flex Items */
+
+.flex-container {
+    display: flex;
+    background-color: #e9ecef;
+    padding: 15px;
+}
+
+.flex-item {
+    background-color: #457b9d;
+    color: white;
+    padding: 25px;
+    margin: 5px;
+    text-align: center;
+}
+
+
+/* Main Axis & Cross Axis */
+
+.axis-container {
+    display: flex;
+
+    /* Main Axis */
+    flex-direction: row;
+
+    /* Cross Axis */
+    align-items: center;
+
+    height: 150px;
+    background-color: #dbeafe;
+}
+
+.axis-container div {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/* Flex Direction */
+
+.direction-container {
+    display: flex;
+
+    /* Changes main axis direction */
+    flex-direction: row;
+
+    background-color: #fef3c7;
+    padding: 15px;
+}
+
+.direction-container div {
+    background-color: #d97706;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/* Justify Content */
+
+.justify-container {
+    display: flex;
+
+    /* Alignment on Main Axis */
+    justify-content: space-around;
+
+    background-color: #ede9fe;
+    padding: 15px;
+}
+
+.justify-container div {
+    background-color: #7c3aed;
+    color: white;
+    padding: 20px;
+}
+
+
+/* Align Items */
+
+.align-container {
+    display: flex;
+
+    /* Alignment on Cross Axis */
+    align-items: center;
+
+    height: 150px;
+    background-color: #dcfce7;
+}
+
+.align-container div {
+    background-color: #16a34a;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/* Flex Wrap */
+
+.wrap-container {
+    display: flex;
+
+    /* Allows items to move to next line */
+    flex-wrap: wrap;
+
+    background-color: #fee2e2;
+    padding: 10px;
+}
+
+.wrap-container div {
+    width: 150px;
+    background-color: #dc2626;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+
+/* Gap */
+
+.gap-container {
+    display: flex;
+
+    /* Space between flex items */
+    gap: 20px;
+
+    background-color: #e0f2fe;
+    padding: 15px;
+}
+
+.gap-container div {
+    background-color: #0284c7;
+    color: white;
+    padding: 20px;
+}
+
+
+/* Flex Grow */
+
+.grow-container {
+    display: flex;
+    width: 100%;
+}
+
+.grow-one {
+    flex-grow: 1;
+    background-color: #6366f1;
+    color: white;
+    padding: 20px;
+}
+
+.grow-two {
+    flex-grow: 2;
+    background-color: #4338ca;
+    color: white;
+    padding: 20px;
+}
+
+
+/* Flex Shrink */
+
+.shrink-container {
+    display: flex;
+    width: 500px;
+    max-width: 100%;
+}
+
+.shrink-container div {
+    width: 250px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.shrink-one {
+    flex-shrink: 1;
+    background-color: #ef4444;
+}
+
+.shrink-two {
+    flex-shrink: 2;
+    background-color: #f97316;
+}
+
+.shrink-three {
+    flex-shrink: 3;
+    background-color: #eab308;
+}
+
+
+
+/* ================================= */
+/* CSS POSITIONING */
+/* ================================= */
+
+.position-box {
+    padding: 20px;
+    color: white;
+    margin: 15px 0;
+    width: 250px;
+    text-align: center;
+}
+
+
+/* Static */
+
+.static-box {
+    position: static;
+    background-color: #64748b;
+}
+
+
+/* Relative */
+
+.relative-box {
+    position: relative;
+
+    /* Moves from its normal position */
+    left: 30px;
+
+    background-color: #0891b2;
+}
+
+
+/* Absolute */
+
+.absolute-parent {
+    position: relative;
+    height: 150px;
+    background-color: #e2e8f0;
+}
+
+.absolute-box {
+    position: absolute;
+
+    top: 40px;
+    right: 30px;
+
+    background-color: #9333ea;
+}
+
+
+/* Fixed */
+
+.fixed-button {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    background-color: #dc2626;
+    color: white;
+
+    padding: 15px 20px;
+
+    border-radius: 50px;
+
+    z-index: 1000;
+}
+
+
+/* Sticky */
+
+.sticky-box {
+    position: sticky;
+
+    top: 0;
+
+    background-color: #059669;
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    z-index: 10;
+}
+
+.long-text {
+    height: 500px;
+    padding: 20px;
+    line-height: 2;
+}
+
+
+
+/* ================================= */
+/* CSS SELECTORS */
+/* ================================= */
+
+
+/* Element Selector */
+
+p {
+    line-height: 1.6;
+}
+
+
+/* Class Selector */
+
+.highlight {
+    background-color: #fef08a;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+/* ID Selector */
+
+#unique-text {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+
+/* Attribute Selector */
+
+input[type="text"] {
+    border: 2px solid #2563eb;
+    padding: 10px;
+}
+
+input[type="email"] {
+    border: 2px solid #16a34a;
+    padding: 10px;
+}
+
+
+/* Descendant Selector */
+
+.parent p {
+    background-color: #dbeafe;
+    padding: 10px;
+}
+
+
+/* Child Selector */
+
+.child-parent > p {
+    background-color: #fbcfe8;
+    padding: 10px;
+}
+
+
+/* Adjacent Sibling Selector */
+
+.sibling-demo p:first-child + p {
+    background-color: #fde68a;
+    padding: 10px;
+}
+
+
+/* General Sibling Selector */
+
+.general-sibling p:first-child ~ p {
+    background-color: #bbf7d0;
+    padding: 10px;
+}
+
+
+/* Pseudo-class */
+
+.hover-button {
+    padding: 15px 25px;
+    border: none;
+    background-color: #1d3557;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* :hover */
+
+.hover-button:hover {
+    background-color: #e63946;
+    transform: scale(1.05);
+}
+
+
+/* Pseudo-element */
+
+.pseudo-element::before {
+    content: "★ ";
+    color: #f59e0b;
+    font-size: 20px;
+}
+
+.pseudo-element::after {
+    content: " ✓";
+    color: #16a34a;
+    font-weight: bold;
+}
+
+
+
+/* ================================= */
+/* FOOTER */
+/* ================================= */
+
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
